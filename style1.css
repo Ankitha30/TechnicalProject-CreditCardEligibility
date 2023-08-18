@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --navbgcolor: rgb(44, 51, 53);
+  --secondrowchildsHeight: calc(100vh - 72px);
+}
+
+.firstrow {
+  background-color: var(--navbgcolor);
+  color: rgb(28, 35, 48);
+  color: white;
+}
+
+.secondmainrow {
+  display: flex;
+}
+
+.aside {
+  height: 100vh;
+  background-color: var(--navbgcolor);
+  position: sticky;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  top: 0px;
+}
+
+.aside ul {
+  list-style-type: none;
+  padding: 5px 10px;
+}
+
+.aside ul li {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+.aside ul li a {
+  text-decoration: none;
+  color: black;
+  color: white;
+}
+.maincontainer {
+  background-color: rgb(144, 134, 118);
+}
+.profileimage {
+  border-radius: 50%;
+}
+.secondRowChilds {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.carousel img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.secondRowChilds .secondRowsubchilds {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.secondRowChilds .secondRowsubchilds .fa-solid {
+  margin: 0px 20px;
+  font-size: 1.5rem;
+}
+.paymentimage {
+  margin-top: 80px;
+}
+.otherdetails {
+  padding: 100px;
+}
+
+.succeddimage {
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+
+.notification-section {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  
+  align-items: center;
+}
+
+.maincontainer {
+  flex: 1;
+}
+/* Notification  */
+
+.notification {
+  overflow: hidden;
+ display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  background-color: #f8f8f8;
+}
+
+.notification-card {
+  overflow: hidden;
+  width: auto;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.notification-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.applications {
+  margin-bottom: 20px;
+}
+
+.application {
+  margin-bottom: 10px;
+}
+
+.application-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.application:last-child {
+  margin-bottom: 0;
+}
+
+.application h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status.eligible {
+  background-color: #34c759;
+  color: #fff;
+}
+
+.status.rejected {
+  background-color: #ff3b30;
+  color: #fff;
+}
+
+.status.in-process {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+
+/* Profile */
+
+
+.profile {
+  text-align: center;
+}
+
+.profile-pic-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.profile-pic-wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profile-pic-input {
+  display: none;
+}
+.card {
+  display: flex;
+  /*flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+; */
+flex-direction: column;
+  position: static;
+  max-width: auto;
+  overflow: hidden;
+  width:75%;
+  height: 100vh;
+  float: right;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card form {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.card label {
+  margin-bottom: 5px;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"],
+.card input[type="number"]
+.card input[type="file"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.card input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.application-box, .application) {
+    row-gap: 15px;
+  }
+}
